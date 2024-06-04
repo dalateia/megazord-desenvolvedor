@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pages/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "assets/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "exercicios/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "README.md",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/css/(.*)", "dest": "/assets/css/$1" },
+    { "src": "/js/(.*)", "dest": "/assets/js/$1" },
+    { "src": "/exercicios/(.*)", "dest": "/exercicios/$1" },
+    { "src": "/README.md", "dest": "/README.md" },
+    { "src": "/(.*)", "dest": "/pages/$1" }
+  ]
+}
