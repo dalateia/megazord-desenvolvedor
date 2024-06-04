@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap");
+
+:root {
+  /* Paleta de cores */
+  --color1: #1bbef5;
+  --color2: #b57c41;
+  --color3: #f58a1b;
+  --color4: #478aa0;
+  --color5: #755f48;
+  --color6: #414a4d;
+
+  /* Fontes */
+  --fonte-padrão: "Nunito Sans", Calibri, "Gill Sans", "Gill Sans MT",
+    "Trebuchet MS", sans-serif;
+  --fonte-destaque: "DotGothic16", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+img#profilepic {
+  width: 150px;
+  height: 150px;
+}
+body {
+  background-color: var(--color1);
+  font-family: var(--fonte-padrão);
+}
+header h1 {
+  display: block;
+  font-family: var(--fonte-destaque);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-destaque);
+}
+nav {
+  background-color: var(--color4);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 4px 3px rgba(0, 0, 0, 0.5);
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+nav a:hover {
+  background-color: var(--color1);
+  text-decoration: underline;
+  border-radius: 5px;
+}
+main {
+  background-color: var(--color3);
+  max-width: 450px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+ul {
+  background-color: var(--color6);
+  color: white;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+ul li {
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style-position: inside;
+  text-align: justify;
+}
+p {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer {
+  font-size: 0.8em;
+  bottom: 0;
+  max-height: 100%;
+  width: 100%;
+  padding: 2px 0;
+  box-shadow: inset 0 0 4px 3px rgba(0, 0, 0, 0.5);
+}
+.fixed-footer {
+  background-color: var(--color6);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.normal-footer {
+  background-color: var(--color6);
+  color: white;
+  position: relative;
+  width: 100%;
+  padding: 2px 0;
+}

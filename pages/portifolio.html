@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megazord - Portifólio</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        #exercicios input {
+            width: 150px;
+            height: 40px;
+            margin: 10px;
+            padding: 3px;
+            border: solid 1px var(--color5);
+            border-radius: 30px;
+            color: black;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            transition: background-color 0s ease, color 0s ease, transform 0.1s ease;
+        }
+
+        #exercicios input:hover {
+            background-color: var(--color4);
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Megazord Desenvolvedor</h1>
+        <p>É um megazord de coisas, por isso o nome.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portifolio.html">Portifólio</a>
+            <a href="app-priston.html">Priston Search</a>
+            <a href="sobre-mim.html">Quem sou eu?</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Meu portifólio de estudos</h1>
+        <p> Os botões abaixo contém pequenos exercícios propostos <br>
+            pelo professor Gustavo Guanabara no curso de
+            JavaScript do <a href="https://www.cursoemvideo.com/curso/javascript/">Curso em vídeo</a>.
+        </p>
+
+        <div id="exercicios">
+            <input type="button" value="Hora Certa" onclick="horaCerta()">
+            <input type="button" value="Tabuada" onclick="tabuada()">
+            <input type="button" value="Contagem" onclick="contagem()">
+            <input type="button" value="Verificador de Idade" onclick="verificadorIdade()">
+            <input type="button" value="The Big Array" onclick="theBigArray()">
+            <input type="button" value="The Roulette" onclick="theRoulette()">
+        </div>
+        <p>E aí, bora trabalhar juntos? Então <a href="contato.html">me chama</a> pra gente conversar
+            melhor!</p>
+    </main>
+    <footer id="footer">
+        Site desenvolvido sem frameworks. <br> Mateus Dalateia - 2024. Todos os direitos reservados.
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>

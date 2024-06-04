@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megazord - Tabuada</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Megazord Desenvolvedor</h1>
+        <p>É um megazord de coisas, por isso o nome.</p>
+        <nav>
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/portifolio.html">Portifólio</a>
+            <a href="/pages/app-priston.html">Priston Search</a>
+            <a href="/pages/sobre-mim.html">Quem sou eu?</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Tabuada</h1>
+        Número: <input type="text" name="txttab" id="txttab" maxlength="11" onkeypress="handleKeyPress(event)">
+        <div>
+
+            <input id="botoes" type="button" value="Gerar Tabuada" onclick="gerarTabuada()">
+            <input id="botoes" type="button" value="Limpar" onclick="limpar()">
+        </div>
+        </div>
+        <div id="result"> Resultado: <br>
+            <table name="tabuada" id="tabselect">
+            </table>
+        </div>
+    </main>
+
+    <aside id="enunciado">
+        <p>
+
+            Neste desafio, é solicitado que o programa
+            receba um número e gere a tabuada do valor em questão.
+        </p>
+
+        <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+    </aside>
+    <footer id="footer">
+        Site desenvolvido sem frameworks. <br> Mateus Dalateia - 2024. Todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>

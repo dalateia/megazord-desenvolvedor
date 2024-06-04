@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megazord - Contagem</title>
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Megazord Desenvolvedor</h1>
+        <p>É um megazord de coisas, por isso o nome.</p>
+        <nav>
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/portifolio.html">Portifólio</a>
+            <a href="/pages/app-priston.html">Priston Search</a>
+            <a href="/pages/sobre-mim.html">Quem sou eu?</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div id="form">
+            Início: <input type="text" name="txtinit" id="txtinit" onkeypress="handleKeyPress(event)" maxlength="4"><br>
+            Fim: <input type="text" name="txtend" id="txtend" onkeypress="handleKeyPress(event)" maxlength="4"><br>
+            Passo: <input type="text" name="txtcont" id="txtcont" maxlength=""><br>
+            <p>
+                <input id="botoes" type="button" value="Contar" onclick="contagem()">
+                <input id="botoes" type="button" value="Limpar" onclick="limpar()">
+            </p>
+        </div>
+        <p id="result">
+            Preparando contagem...
+        </p>
+    </main>
+    <aside id="enunciado">
+        O desafio apresenta o cenário onde recebe um número inicial (Início) e um número final (Fim).
+        Com estes dados ele irá contar do número inicial ao final.
+        O campo de contagem (Passo) indica quantos passos por vez o valor contará até chegar ao final.
+        É necessário ao menos um número inicial ou final. Caso o passo seja não seja informado ele assumirá 1.
+        <p>
+            IMPORTANTE! Caso informe um número muito grande, seu navegador IRÁ travar. <br> O maior número aceitável é
+            9999.
+        </p>
+        <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+    </aside>
+    <footer id="footer">
+        Site desenvolvido sem frameworks. <br> Mateus Dalateia - 2024. Todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

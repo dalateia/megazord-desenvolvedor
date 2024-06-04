@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megazord - Verificador de Idade</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregar()">
+    <header>
+        <h1>Megazord Desenvolvedor</h1>
+        <p>É um megazord de coisas, por isso o nome.</p>
+        <nav>
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/portifolio.html">Portifólio</a>
+            <a href="/pages/app-priston.html">Priston Search</a>
+            <a href="/pages/sobre-mim.html">Quem sou eu?</a>
+            <a href="/pages/contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Verificador de Idade</h1>
+        <p>
+            Ano de Nascimento: <input type="number" name="txtano" id="txtano" onkeypress="keypress(event)">
+            <br>
+            Sexo:
+            <input type="radio" name="radsex" id="male" checked>
+            <label for="male">Masculino</label>
+            <input type="radio" name="radsex" id="female">
+            <label for="female">Feminino</label>
+            <br>
+            <input id="botoes" type="button" value="Verificar" onclick="verificar()">
+        </p>
+
+
+        <p id="resultado">
+            Preencha os dados acima para ver o resultado!
+        </p>
+    </main>
+    <aside id="enunciado">
+        <p>
+            Neste desafio, o programa solicita um ano de nascimento e um gênero para retornar,
+            a idade e uma foto pré-definida que represente uma pessoa com determinada idade.
+        </p>
+
+        <input id="botoes" type="button" value="Voltar" onclick="voltarPagina()">
+    </aside>
+    <footer id="footer">
+        Site desenvolvido sem frameworks. <br> Mateus Dalateia - 2024. Todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
